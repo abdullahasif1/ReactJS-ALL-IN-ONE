@@ -22,7 +22,7 @@ function NameList() {
         skill: 'Vue'
     }
     ]
-    const anotherNameList = personData.map(person=> <Person person={person}/>)
+    const anotherNameList = personData.map(person=> <Person person={person} key ={person.id}/>)
     return <div>{anotherNameList}</div>
 
     // ANOTHER WAY
