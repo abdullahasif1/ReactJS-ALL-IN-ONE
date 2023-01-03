@@ -10,8 +10,21 @@ function App() {
   
   return (
     <div className="App">
-      <Counter/>
-       {/* <Message/> */}
+
+      {/* <Counter/> */}
+      {/* <Message/> */}
+
+       <Greet name='Abdullaaaaah' heroName="Batman"/>
+      <Welcome name="Ali Khan" heroName="Pathan"> <p>Im a child</p></Welcome>
+     
+
+
+
+
+
+
+
+
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -26,10 +39,6 @@ function App() {
           Learn React and chill
         </a>
       </header> */}
-
-      {/* <Greet name='Abdullaaaaah'/>
-      <Welcome> <p>Im a child</p></Welcome> */}
-     
     </div>
   );
 }
