@@ -2,32 +2,33 @@ import React from 'react'
 import Person from './Person'
 
 function NameList() {
-    // const names = ['Nimra', 'Maha', 'Zoha'] 
+     const names = ['Nimra', 'Maha', 'Zoha'] 
     
     // Just another way to render list
-    const personData = [
-    {
-        id: 1,
-        name: 'Nimra',
-        skill: 'React'
-    },
-    {
-        id: 2,
-        name: 'Maha',
-        skill: 'Angular'
-    },
-    {
-        id: 3,
-        name: 'Zoha',
-        skill: 'Vue'
-    }
-    ]
-    const anotherNameList = personData.map(person=> <Person person={person} key ={person.id}/>)
-    return <div>{anotherNameList}</div>
+    // const personData = [
+    // {
+    //     id: 1,
+    //     name: 'Nimra',
+    //     skill: 'React'
+    // },
+    // {
+    //     id: 2,
+    //     name: 'Maha',
+    //     skill: 'Angular'
+    // },
+    // {
+    //     id: 3,
+    //     name: 'Zoha',
+    //     skill: 'Vue'
+    // }
+    // ]
+    // const anotherNameList = personData.map(person=> <Person person={person} key ={person.id}/>)
+    // return <div>{anotherNameList}</div>
 
-    // ANOTHER WAY
-    // const namesList = names.map(name=> <h1>{name}</h1>)
-    // return <div>{namesList}</div>
+
+    //ANOTHER WAY
+    const namesList = names.map((name,index)=> <h1 key={index}> {name}</h1>)
+    return <div>{namesList}</div>
 
 //   return (
 //     <div>
