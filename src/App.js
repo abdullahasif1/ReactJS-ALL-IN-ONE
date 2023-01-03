@@ -4,23 +4,22 @@ import Greet from './Components/Greet';
 import Welcome from './Components/Welcome';
 import Message from './Components/Message';
 import Counter from './Components/Counter';
+import FunctionClick from './Components/FunctionClick';
+import ClassClick from './Components/ClassClick';
 
 
 function App() {
   
   return (
     <div className="App">
+      <FunctionClick/>
+      <ClassClick/>
 
       {/* <Counter/> */}
       {/* <Message/> */}
-
-       <Greet name='Abdullaaaaah' heroName="Batman"/>
-      <Welcome name="Ali Khan" heroName="Pathan"> <p>Im a child</p></Welcome>
-     
-
-
-
-
+      {/* <Greet name='Abdullaaaaah' heroName="Batman"/>
+      <Welcome name="Ali Khan" heroName="Pathan"> <p>Im a child</p></Welcome> */}
+    
 
 
 
