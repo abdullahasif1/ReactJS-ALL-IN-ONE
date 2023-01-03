@@ -3,13 +3,15 @@ import './App.css';
 import Greet from './Components/Greet';
 import Welcome from './Components/Welcome';
 import Message from './Components/Message';
+import Counter from './Components/Counter';
 
 
 function App() {
   
   return (
     <div className="App">
-       <Message/>
+      <Counter/>
+       {/* <Message/> */}
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
