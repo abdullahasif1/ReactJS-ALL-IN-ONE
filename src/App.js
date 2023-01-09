@@ -10,17 +10,22 @@ import EventBind from './Components/EventBind';
 import ParentComponent from './Components/ParentComponent';
 import UserGreeting from './Components/UserGreeting';
 import NameList from './Components/NameList';
+import Stylesheet from './Components/Stylesheet';
+import Inline from './Components/Inline';
 
 
 function App() {
   
   return (
     <div className="App">
-      <NameList/>
+      <Inline/>
+      {/* <Stylesheet primary={true}/> */}
+
+      {/* <NameList/> */}
       {/* <UserGreeting/> */}
       {/* <ParentComponent/> */}
       {/* <EventBind/> */}
-       {/* <FunctionClick/> */}
+      {/* <FunctionClick/> */}
       {/* <ClassClick/>  */}
 
       {/* <Counter/> */}
