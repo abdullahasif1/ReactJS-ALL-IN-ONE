@@ -20,12 +20,33 @@ class LifeCycleA extends Component {
         console.log("LifeCycle A componentDidMount")
     }
     
+    shouldComponentUpdate(){
+        console.log("LifeCycle A shouldComponentUpdate")
+        return true
+    }
+
+    getSnapshotBeforeUpdate(prevProps, prevState){
+        console.log("LifeCycle A getSnapshotBeforeUpdate")
+        return null;
+
+    }
+    componentDidUpdate(){
+        console.log("LifeCycle A componentDidUpdate")
+
+    }
+
+    changeState = () =>{
+        this.setState({
+            name: 'Codevolution'
+        })
+    }
     render() {
         console.log("LifeCycle A render")
 
     return (
       <div>
         <div>LifeCycleA</div>
+        <button className='btn btn-primary' onClick={this.changeState}>Change state</button>
         <div><LifeCycleB/></div>
       </div>
     )
