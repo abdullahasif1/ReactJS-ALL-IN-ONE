@@ -5,12 +5,20 @@ class RefsDemo extends Component {
       super(props)
     
       this.inputRef= React.createRef()
+      this.cbRef = null    //callback ref
+      this.setCbRef = element =>{
+        this.cbRef = element     
+      }
       
     }
 
     componentDidMount(){
-        this.inputRef.current.focus()
-        console.log(this.inputRef.current.value)
+        if(this.cbRef){ // as cbRef directly have access to the node in DOM
+            this.cbRef.focus() // thats why we dont use 'current'
+        }
+
+        // this.inputRef.current.focus()
+        // console.log(this.inputRef.current.value)
     }
 
     handleClick = () =>{
@@ -23,6 +31,7 @@ class RefsDemo extends Component {
     return (
       <div>
         <input type='text' ref={this.inputRef}/>
+        <input type='text' ref={this.setCbRef}/>
         <button className='btn btn-primary' type='button' onClick={this.handleClick}>Click</button>
       </div>
     )
