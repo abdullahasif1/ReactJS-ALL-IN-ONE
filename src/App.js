@@ -21,6 +21,8 @@ import ParentComp from './Components/ParentComp';
 import RefsDemo from './Components/RefsDemo';
 import FocusInput from './Components/FocusInput';
 import FRParentInput from './Components/FRParentInput';
+import Hero from './Components/Hero';
+import ErrorBoundary from './Components/ErrorBoundary';
 
 
 function App() {
@@ -28,7 +30,20 @@ function App() {
   return (
     <div className="App">
       
-      <FRParentInput/>
+      <ErrorBoundary>
+        <Hero heroname={'Batman'}/>
+      </ErrorBoundary>
+      
+      <ErrorBoundary>
+        <Hero heroname={'Superman'}/>
+      </ErrorBoundary>
+
+      <ErrorBoundary>
+        <Hero heroname={'Joker'}/>
+      </ErrorBoundary>
+      
+      
+      {/* <FRParentInput/> */}
       {/* <FocusInput/> */}
       {/* <RefsDemo/> */}
 
@@ -58,7 +73,7 @@ function App() {
 
       {/* <Counter/> */}
       {/* <Message/> */}
-      {/* <Greet name='Abdullaaaaah' heroName="Batman"/>
+      {/* <Greet name='Abdullah' heroName="Batman"/>
       <Welcome name="Ali Khan" heroName="Pathan"> <p>Im a child</p></Welcome> */}
     
 
