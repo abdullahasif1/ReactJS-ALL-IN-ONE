@@ -32,13 +32,15 @@ import User from './Components/User';
 import ComponentC from './Components/ComponentC'
 import { UserProvide } from './Components/userContext';
 import PostList from './Components/PostList';
+import PostForm from './Components/PostForm';
 
 
 function App() {
   
   return (
     <div className="App">
-      <PostList />
+      <PostForm/>
+      {/* <PostList /> */}
 
 
       {/* <UserProvide value ="Abdullah">
