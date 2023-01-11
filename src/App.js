@@ -31,15 +31,19 @@ import HoverCounter2 from './Components/HoverCounter2';
 import User from './Components/User';
 import ComponentC from './Components/ComponentC'
 import { UserProvide } from './Components/userContext';
+import PostList from './Components/PostList';
 
 
 function App() {
   
   return (
     <div className="App">
-      <UserProvide value ="Abdullah">
+      <PostList />
+
+
+      {/* <UserProvide value ="Abdullah">
         <ComponentC />
-      </UserProvide>
+      </UserProvide> */}
 
 
       {/* <User name={(isLoggedIn) => isLoggedIn ? 'Abdullah' : 'Guest'} /> */}
