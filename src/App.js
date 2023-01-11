@@ -29,16 +29,20 @@ import Counter2 from './Components/Counter2';
 import ClickCounter2 from './Components/ClickCounter2';
 import HoverCounter2 from './Components/HoverCounter2';
 import User from './Components/User';
+import ComponentC from './Components/ComponentC'
+import { UserProvide } from './Components/userContext';
 
 
 function App() {
   
   return (
     <div className="App">
+      <UserProvide value ="Abdullah">
+        <ComponentC />
+      </UserProvide>
 
 
-
-      <User name={(isLoggedIn) => isLoggedIn ? 'Abdullah' : 'Guest'} />
+      {/* <User name={(isLoggedIn) => isLoggedIn ? 'Abdullah' : 'Guest'} /> */}
       {/* <Counter2 render={(count, increamentCount)=>(<ClickCounter2 count={count} increamentCount={increamentCount}/>
       )}/>
       <Counter2 render={(count, increamentCount)=>(<HoverCounter2 count={count} increamentCount={increamentCount}/>
